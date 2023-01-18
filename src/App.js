@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpenses/NewExpense";
 
 const App = () => {
     const expenses = [
@@ -11,13 +11,14 @@ const App = () => {
         },
         {
             date: new Date(2023, 0, 5),
-            title:'Icecream',
+            title:'Ice cream',
             price: 3.99
         }
     ]
 
     return (
         <div className="App">
+            <NewExpense></NewExpense>
             <Expenses expenses={expenses}></Expenses>
         </div>
     );
