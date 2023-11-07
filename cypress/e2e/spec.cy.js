@@ -14,7 +14,7 @@ describe('Expenses App', () => {
   })
   it('should add expense',() => {
     cy.contains("Add Expense").click()
-    cy.get('form input[type="text"]')
+    cy.get('form [inputtype="text"]')
         .type("Äge Värk")
     cy.get('form input[type="number"]')
         .type("69.99")
